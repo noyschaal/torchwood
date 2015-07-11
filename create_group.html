@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap Sidebar</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]-->
+			<!--<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+		<!--[endif]-->
+		<link href="css/signin.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+<header class="navbar navbar-default navbar-static-top" role="banner" style="height:auto;">
+
+  <div class="container">
+     <img src="media/mindframe1.png" class="img-responsive" alt="Brand" stye="float:left vertical-align:text-bottom;" />
+ 
+    <div class="navbar-header">
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+    <!-- Logo/Brand for Nav Bar -->
+      
+      <a href="index.html" class="navbar-brand">Mind Frame</a>
+
+  
+    
+    </div>
+  
+  <!-- Menu Items for Nav bar -->
+    <nav class="collapse navbar-collapse" role="navigation">
+  
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="create_topic.html">Create Topic</a>
+        </li>
+    <li>
+          <a href="create_group.html">Create Group</a>
+        </li>
+        <li>
+          <a href="users_template.html">Users</a>
+        </li>
+      </ul>
+    
+    </nav>
+  
+  <!-- End Header Container -->
+  </div>
+</header>
+
+<div class="container">
+  
+  <div class="row" id="pwd-container">
+    <div class="col-md-4"></div>
+    
+    <div class="col-md-4-offset col-md-4">
+      <section class="login-form">
+        <form method="post" action="#" role="login">
+		
+          <h3><img src="media/mindframe2.png" class="img-responsive" alt="Brand" height=65 width=65 />New Group</h3>
+		  
+          <input type="text" name="Group Name" placeholder="Group Name" required class="form-control input-lg" />
+          
+          <textarea rows="5" placeholder="Description" spellcheck="true" style="width:100%; resize:none;" required class="form-control input-lg"></textarea>
+
+           <div class="btn-block">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width:100%">Select Members <span class="caret"></span></button>
+                <ul class="dropdown-menu scrollable-menu" role="menu">
+                    <li><a href="#">User 1</a></li>
+                    <li><a href="#">User 2</a></li>
+                    <li><a href="#">User 3</a></li>
+                    <li><a href="#">User 4</a></li>
+                    <li><a href="#">User 5</a></li>
+                    <li><a href="#">User 6</a></li>
+                    <li><a href="#">User 7</a></li>
+                    <li><a href="#">USer 8</a></li>
+                    <li><a href="#">USer 9</a></li>
+                    <li><a href="#">User 10</a></li>
+                    <li><a href="#">USer 11</a></li>
+                    <li><a href="#">USer 12</a></li>
+                    <li><a href="#">USer 13</a></li>
+                </ul>
+            </div>
+          
+          <div class="pwstrength_viewport_progress"></div>
+          
+          
+          <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Create</button>
+          
+        </form>
+        
+      </section>  
+      </div>
+      
+      <div class="col-md-4"></div>
+      
+
+  </div>   
+  
+</div>
+
+      		</div> 
+  	</div>
+</div>
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
