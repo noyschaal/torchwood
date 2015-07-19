@@ -14,6 +14,7 @@ border-width: 3px!important;
 border-color: white!important;
 color:#1a1812!important;
 border-radius: 10px;
+height:225px;
 }
 
 .post:hover{
@@ -62,6 +63,12 @@ background-color:#5c9a1b!important;
 color: white!important;
 }
 
+.navbar-nav>li>a.nav-user:hover,
+.navbar-nav>li>a.nav-user{
+color: #1a1812!important;
+background-color:#d5d5d2!important;
+}
+
 
 /*----- Navbar side -----*/
 
@@ -102,4 +109,42 @@ color:#5c9a1b!important;
 .entry-list:hover{
 background-color:#99D35D!important;
 color:white!important;
+}
+
+
+/*----- Footer -------*/
+footer, footer a{
+	text-align: center;
+	color: #1a1812;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.footer-company-motto{
+color: #aa005f!important;
+
+}
+
+.footer-company-name{
+	color: #5c9a1b!important;
+}
+
+
+/*----forms----*/
+
+form{
+	padding:20px;
+}
+
+button{
+	background-color:#aa005f;
+	color:white!important;
+}
+
+.forgot-pass{
+	padding:10px;
+	text-align:center;
+}
+
+textarea {
+	height:300px!important;
 }

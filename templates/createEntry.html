@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Mind Frame - Login {% endblock %}
+
+{% block body %}
+    <div class="container">
+    <div class="col-md-2"></div>
+
+      <div class="col-md-2-offset col-md-8">
+       <form method="post" action="/auth/" role="login">{% csrf_token %}
+
+       <div class="form-group">
+          <label for="username"> Title </label>
+          <input type="text" class="form-control" name="title" value="">
+      </div>
+      <div class="form-group">
+          <label for="password"> Body </label>
+          <textarea type="textarea" class="form-control" name="content" value="">  </textarea>
+      </div>
+          <!--<input type="submit" value="login"/>-->
+         <button type="submit" value="login" name="go" class="btn btn-block">Submit Entry</button>
+          
+        </form>
+
+</div>
+{% endblock %}
