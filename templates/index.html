@@ -8,16 +8,20 @@
       <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
+
+          <div class="pull-right visible-xs" id="toggle">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" data-toggle="#sidebar">sidebar</button>
+          </div>
+
+          <div class="visible-xs col-xs-12 col-sm-9"></div>
+
           <div class="row">
 
             {% for topic in topics %}
             <a href="{% url 'views.topic' topic_id=topic.id %}">
             <div class="col-xs-6 col-lg-4 post">
               <h3>{{topic.title}}</h3>
-              <p>{{topic.content|truncatechars:200}}</p>
+              <p>{{topic.content|truncatechars:150}}</p>
             </div><!--/.col-xs-6.col-lg-4-->
             </a>
             {%endfor%}

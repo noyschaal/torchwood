@@ -69,6 +69,10 @@ color: #1a1812!important;
 background-color:#d5d5d2!important;
 }
 
+.navbar-header>button{
+	background-color:#aa005f;
+}
+
 
 /*----- Navbar side -----*/
 
@@ -112,6 +116,23 @@ color:white!important;
 }
 
 
+#createEntry {
+background-color:#5c9a1b!important;
+color:white!important;
+}
+
+#createEntry:hover{
+background-color:#99D35D!important;
+color:white!important;
+}
+
+#toggle>button{
+ background-color:#aa005f!important;
+}
+
+#toggle>button:hover{
+ background-color:#C9187C!important;
+}
 /*----- Footer -------*/
 footer, footer a{
 	text-align: center;
@@ -137,6 +158,12 @@ form{
 
 button{
 	background-color:#aa005f;
+	color:white!important;
+}
+
+
+button:hover{
+	background-color:#C9187C!important;
 	color:white!important;
 }
 

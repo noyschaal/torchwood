@@ -7,30 +7,39 @@
 
       <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="col-xs-6 col-sm-2">
+        
+          <div class="pull-right visible-xs" id="toggle">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" data-toggle="#sidebar">sidebar</button>
+          </div>
+
+          <div class="visible-xs col-xs-12 col-sm-9"></div>
+
+        <div class="col-xs-3 col-sm-2">
           <div class="list-group">
             <a href="#" class="entry-list list-group-item active-override">Mentor</a>
-            <a href="#" class="entry-list list-group-item">Entry 1</a>
-            <a href="#" class="entry-list list-group-item">Entry 2</a>
-            <a href="#" class="entry-list list-group-item">Entry 3</a>
-            <a href="#" class="entry-list list-group-item">Entry 4</a>
+
+
+            {% for entry in entries %}
+            <a href="#" class="entry-list list-group-item">{{entry.user.first_name}}</a>
+            {% endfor %}
           </div>
+
+
         </div><!--/.sidebar-offcanvas-->
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
        
-        <div class="mentor-post col-xs-12 col-sm-7">
+        <div class="mentor-post col-xs-8 col-sm-7">
               <h1>{{topic.title}}</h1>
               <p>{{topic.content}}</p>
         </div><!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-2">
+        <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="#" class="list-group-item active-override">Group</a>
             <a href="#" class="list-group-item">Personal</a>
             <a href="#" class="list-group-item">Favorites</a>
           </div>
+
+          <a class="btn btn-default" href="/createEntry" id="createEntry">+ Add Entry</a>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
   </div>
